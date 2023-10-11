@@ -44,6 +44,11 @@ if($_POST){
         
             return $saltedPassword;
         }
+        //Construction du mot de passe encodé
+        function encodePassword($saltedPassword){
+            $encodedPassword = sha1($saltedPassword);
+            return $encodedPassword;
+        }
        
     }
 }

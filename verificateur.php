@@ -1,9 +1,6 @@
 <?php
  require_once("concepteur.php");
 
- //var_dump($_POST);
-
-
 
 if($_POST){
     $password=$_POST['pass'];
@@ -13,13 +10,17 @@ if($_POST){
     else{
         $validPassword = validPassword($_POST['pass']);
  echo'</br>';
-var_dump($validPassword);
+
 
 echo'</br></br>';
 
 $saltedPassword = aLittleSalt($_POST['pass']);
-echo("Votre mot de passe avec le sel est".$saltedPassword);
-echo'</br>';
+echo("Votre mot de passe avec le sel est : ".$saltedPassword);
+echo'</br></br>';
+$encodedPassword = encodePassword($_POST['pass']);
+echo("Votre mot de passe encodé est : ".$encodedPassword);
+echo"<br><br>";
+
     }
 }
  
@@ -28,4 +29,5 @@ echo'</br>';
 ?>
 
 
-<a href="./index.php">Retourner à la page précédente</a>
+<a href="./index.php">Retourner à la page précédente</a>&emsp;
+<a href="./terminal.php">Aller à la page suivante</a>
