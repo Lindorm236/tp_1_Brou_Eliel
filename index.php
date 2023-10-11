@@ -1,6 +1,6 @@
 <html>
     <head></head>
-    <body bgcolor="skyblue">
+    <body bgcolor="cyan">
         <h1><center><u>Bienvenue sur le forum Sapphire Pegasus</u></center></h1>
 <form method="post" action="verificateur.php" align="center"><br><br><br>
     <fieldset>

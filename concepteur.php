@@ -6,12 +6,7 @@
 </html>
 <?php
 //Validation du mot de passe
-if($_POST){
-    $password=$_POST['pass'];
-    if(empty($password)){
-        echo"</br>Champ vide, veuillez entrer votre mot de passe";
-    }
-    else{
+
 
         function validPassword( $password){
 
@@ -50,8 +45,8 @@ if($_POST){
             return $encodedPassword;
         }
        
-    }
-}
+    
+
 
  
 
